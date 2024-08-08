@@ -4,6 +4,33 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: rgb(251, 255, 255);
+    background-size: cover; /* Optional: Adjust background size */
+    background-position: center; /* Optional: Center the image */
+    
+}
+table{
+    border: 2px solid;
+    align-content: center;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+    background-color: rgb(186, 202, 202);
+}
+h3{
+    color: rgb(255, 98, 0);
+    text-align: center;
+    width:fit-content;
+    background-color:rgba(69, 69, 79, 0.411);
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid rgba(0, 0, 0, 0.768);
+    border-radius: 5px;
+   
+
+    
+
 }
 header {
     background-color: #333;

@@ -1,9 +1,185 @@
-<!-- achievements.html -->
-{% extends "base.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'a3.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="box">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'overview' %}">Overview</a></li>
+                <li><a href="#">Chef's Excellence</a></li>
+                <li><a href="{% url 'achievements' %}">Achievements</a></li>
+                <li><a href="#">Ratings</a></li>
+            </ul>
+        </nav>
+    </header><Br><br><br>
+        
 
-{% block title %}Achievements{% endblock %}
+    <div class="content">
+        <!-- Content here -->
+         <h3>SOUPS</h3>
+        <table>
+            <Tr>
+                <th>veg</th><br>
+                <th>Non-veg</th>
+            </tr>
+            <tr>
+            <td>Mushroom</td><br>
+            
+            <td>Chicken clear</td>
+            </tr>
+            <tr>
+                <td>Tomato Soup</td>
+                <td>Chicken Noodle Soup</td>
+            </tr>
+            <tr>
+                <td>Vegetable Minestrone</td>
+                <td>Beef Barley Soup</td>
+            </tr>
+            <tr>
+                <td>Butternut Squash Soup</td>
+                <td>Seafood Chowder</td>
+            </tr>
+            <tr>
+                <td>Lentil Soup</td>
+                <td>Turkey Rice Soup</td>
+            </tr>
+            <tr>
+                <td>Carrot Ginger Soup</td>
+                <td>Clam Chowder</td>
+            </tr>
+        </table>            <br>
 
-{% block content %}
-    <h1>Welcome to the Achievements Page</h1>
-    <p>Here you can see all the achievements of our chefs and restaurant.</p>
-{% endblock %}
+<h3>starters</h3>
+        <table>
+            <tr>
+                <th>VEG</th>
+                <th>NON-VEG</th>
+            </tr>
+            <tr>
+                <td>Paneer Tikka</td>
+                <td>Chicken Wings</td>
+            </tr>
+            <tr>
+                <td>Spring Rolls</td>
+                <td>Fish Fingers</td>
+            </tr>
+            <tr>
+                <td>Stuffed Mushrooms</td>
+                <td>Lamb Kebabs</td>
+            </tr>
+            <tr>
+                <td>Bruschetta</td>
+                <td>Prawn Cocktail</td>
+            </tr>
+            <tr>
+                <td>Falafel</td>
+                <td>Buffalo Shrimp</td>
+            </tr>
+        </table>
+
+<h3>MAIN COURSE</h3><BR><BR>
+    <table>
+
+                <Tr>
+                <th>VEG</th>
+                <th>NON-VEG</th>
+            </tr>
+            <tr>
+                <td>Masala Dosa</td>
+                <td>Chicken Chettinad</td>
+            </tr>
+            <tr>
+                <td>Vegetable Biryani</td>
+                <td>Meen Curry (Fish Curry)</td>
+            </tr>
+            <tr>
+                <td>Puliyogare (Tamarind Rice)</td>
+                <td>Mutton Korma</td>
+            </tr>
+            <tr>
+                <td>Uttapam</td>
+                <td>Prawn Masala</td>
+            </tr>
+            <tr>
+                <td>Idli Sambar</td>
+                <td>Kozhi Varutha Curry (Chicken Fry)</td>
+            </tr>
+            <tr>
+                <td>Avial</td>
+                <td>Beef Fry</td>
+            </tr>
+            <tr>
+                <td>Bisibelebath</td>
+                <td>Egg Curry</td>
+            </tr>
+            <tr>
+                <td>Rasam Rice</td>
+                <td>Crab Masala</td>
+            </tr>
+            <tr>
+                <td>Paneer Butter Masala</td>
+                <td>Fish Moilee</td>
+            </tr>
+            <tr>
+                <td>Kurma with Parotta</td>
+                <td>Chicken 65</td>
+            </tr>
+        </table><br>
+        <h3>Desserts&drinks</h3><br>
+        <table>
+            <tr>
+                <Th>Desserts</th>
+                <th>Softdrink</th>
+            </tr>
+            <tr>
+                <td>Gulab Jamun</td>
+                <td>Mango Lassi</td>
+            </tr>
+            <tr>
+                <td>Rasgulla</td>
+                <td>Lime Soda</td>
+            </tr>
+            <tr>
+                <td>Payasam</td>
+                <td>Sweet Lassi</td>
+            </tr>
+            <tr>
+                <td>Kesari Bath</td>
+                <td>Buttermilk</td>
+            </tr>
+            <tr>
+                <td>Carrot Halwa</td>
+                <td>Coconut Water</td>
+            </tr>
+            <tr>
+                <td>Jalebi</td>
+                <td>Fresh Lime Juice</td>
+            </tr>
+            <tr>
+                <td>Kaju Katli</td>
+                <td>Fruit Punch</td>
+            </tr>
+            <tr>
+                <td>Mysore Pak</td>
+                <td>Masala Chai</td>
+            </tr>
+            <tr>
+                <td>Badam Halwa</td>
+                <td>Rose Milk</td>
+            </tr>
+            <tr>
+                <td>Coconut Barfi</td>
+                <td>Thandai</td>
+            </tr>
+            
+    </div>
+   
+</body>
+</html>
