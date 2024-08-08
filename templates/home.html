@@ -1,0 +1,110 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        header {
+            background-color: #333;
+            color: #fff;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        
+        .box {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .box li {
+            margin: 0 15px;
+            color: aliceblue;
+        }
+        
+        .box li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        
+        .box li a:hover {
+            text-decoration: underline;
+        }
+       
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .c1 {
+            width: 80%;
+            justify-content: center;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid yellow;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .c1 h1 {
+            font-family: Arial, sans-serif;
+            color: teal;
+        }
+        .mb {
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .mb:hover {
+            background-color: #555;
+        }
+        body {
+            background-image: url("{% static 'a.jpeg' %}");
+            background-size: cover; /* or 'contain' depending on your needs */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; /* Ensures the image does not repeat */
+            margin: 0;
+            height: 100vh; /* Ensures the body takes full viewport height */
+        }
+        
+    </style>
+    <title>Asus Cuisine</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="box">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'overview' %}">Overview</a></li>
+                <li><a href="#">Chef's Excellence</a></li>
+                <li><a href="{% url 'achievements' %}">Achievements</a></li>
+                <li><a href="#">Ratings</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="c1">
+            <h1>Welcome to Asus's Cuisine</h1>
+            <a href="{% url 'menu' %}" class="mb">Menu</a>
+            
+        </div>
+    </div>
+</body>
+</html>

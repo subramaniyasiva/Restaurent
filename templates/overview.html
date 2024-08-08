@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'a1.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="box">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'overview' %}">Overview</a></li>
+                <li><a href="#">Chef's Excellence</a></li>
+                <li><a href="{% url 'achievements' %}">Achievements</a></li>
+                <li><a href="#">Ratings</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to Asus's Cuisine</h1>
+        <div class="ove">
+            <p>Welcome to Asus's Cuisine</p>
+            <img src="{% static 'q.jpeg' %}" alt="Asus in 1900s" class="image-container">
+            <p>Asus Cuisine is a time-honored establishment with a rich legacy spanning several decades. Founded in 1926, our restaurant has been a cherished culinary landmark, renowned for its warm hospitality and exceptional dining experience.</p>
+            <p>A Legacy of Excellence</p>
+            <p>For years, Asus Cuisine has been celebrated for its commitment to preserving traditional flavors while embracing innovative culinary techniques. Our menu is a tribute to classic recipes that have stood the test of time, crafted with the finest ingredients and prepared with a touch of culinary artistry.</p>
+            <img src="{% static 'w.jpeg' %}" alt="Asus in 1900s" class="image-container">
+            <p>Authentic Flavors, Timeless Appeal</p>
+            <p>At Asus Cuisine, we take pride in our extensive selection of dishes that reflect the true essence of world Cuisine. From delectable appetizers to hearty main courses and indulgent desserts, each dish is a testament to our dedication to quality and authenticity. Our chefs, with years of experience, meticulously prepare every meal, ensuring that each bite is a delightful journey through rich and diverse flavors.</p>
+            <img src="{% static 'e.jpeg' %}" alt="Asus in 1900s" class="image-container">
+            <p>A Place for Every Occasion</p>
+            <p>Our charming and elegant ambiance makes Asus Cuisine the perfect setting for any occasion. Whether you're celebrating a special milestone, enjoying a family meal, or simply seeking a relaxing dining experience, our restaurant offers a welcoming atmosphere that enhances every moment.</p>
+            <p>Unwavering Commitment to Service</p>
+            <p>Our dedicated staff is committed to providing impeccable service, ensuring that every visit to Asus Cuisine is memorable. From the moment you step through our doors, you will be greeted with warmth and attentiveness, making your dining experience truly exceptional.</p>
+            <img src="{% static 'r.jpeg' %}" alt="Asus in 1900s" class="image-container">
+            <p>Join Us for a Timeless Experience</p>
+            <p>Experience the legacy of Asus Cuisine and savor the flavors that have delighted generations. We invite you to join us for a memorable experience.</p>
+        </div>
+    </main>
+</body>
+</html>
